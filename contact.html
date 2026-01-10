@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — AI RES</title>
+  <meta name="description" content="Contact AI RES to request a demo." />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">
+        <span class="brand-mark" aria-hidden="true">◻︎</span>
+        <span class="brand-name">AI RES</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="../products/">Products</a>
+        <a href="../research/">Research</a>
+        <a href="../about/">About</a>
+        <a class="active" href="./">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Request a demo</h1>
+        <p class="lead">Tell us your workflow. We’ll respond with a short plan and a demo proposal.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cards two">
+          <article class="card">
+            <h2>Fastest way</h2>
+            <p class="muted">
+              This is a static site (GitHub Pages), so the form uses <strong>mailto</strong> by default.
+              Replace the email address below with yours.
+            </p>
+
+            <div class="form">
+              <label>
+                Your name
+                <input type="text" id="name" placeholder="Jane Doe" autocomplete="name" />
+              </label>
+              <label>
+                Your email
+                <input type="email" id="email" placeholder="jane@company.com" autocomplete="email" />
+              </label>
+              <label>
+                What do you want to demo?
+                <select id="topic">
+                  <option value="Excel Agent">Excel Agent</option>
+                  <option value="Android Assistant">Android Assistant</option>
+                  <option value="Both">Both</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+              <label>
+                Message
+                <textarea id="message" rows="5" placeholder="Briefly describe your workflow and what success looks like."></textarea>
+              </label>
+
+              <button class="btn btn-primary" id="sendEmail">Send email</button>
+              <p class="tiny muted" style="margin-top:10px;">
+                If you prefer, email directly:
+                <a class="link" href="mailto:hello@aires.example?subject=Request%20a%20Demo%20—%20AI%20RES">hello@aires.example</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>What to include</h2>
+            <ul class="checklist">
+              <li>Your workflow (2–3 steps)</li>
+              <li>Data types (tables, PDFs, images, notifications)</li>
+              <li>Constraints (privacy, latency, device)</li>
+              <li>What “success” means (time saved, accuracy, automation)</li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <h3>Typical demo agenda</h3>
+            <ol class="ordered">
+              <li>5 min: your workflow + goals</li>
+              <li>10 min: live product walkthrough</li>
+              <li>10 min: integration + pilot plan</li>
+            </ol>
+
+            <a class="btn btn-ghost" href="../products/">See products</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="brand small">
+          <span class="brand-mark" aria-hidden="true">◻︎</span>
+          <span class="brand-name">AI RES</span>
+        </div>
+        <p class="muted">AI agents and multimodal research.</p>
+      </div>
+      <div class="footer-right">
+        <a href="../products/">Products</a>
+        <a href="../research/">Research</a>
+        <a href="../about/">About</a>
+        <a href="../contact/">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="muted">© <span id="year"></span> AI RES.</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
