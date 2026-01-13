@@ -49,4 +49,25 @@
       window.location.href = href;
     });
   }
+
+  // Capability slider controls
+  const slider = document.querySelector("[data-slider]");
+  const track = document.querySelector("[data-slider-track]");
+  const prev = document.querySelector("[data-slider-prev]");
+  const next = document.querySelector("[data-slider-next]");
+  if (slider && track && prev && next) {
+    const scrollAmount = () => {
+      const card = track.querySelector(".slider-card");
+      if (!card) return 260;
+      const gap = parseFloat(getComputedStyle(track).columnGap || "16");
+      return card.getBoundingClientRect().width + gap;
+    };
+
+    prev.addEventListener("click", () => {
+      track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+    next.addEventListener("click", () => {
+      track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+  }
 })();
